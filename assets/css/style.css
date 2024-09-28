@@ -48,7 +48,12 @@ img {
   height: auto;
   margin: 20px;
 }
-
+.imgbanner{
+  height:300px;
+width: 500px;
+padding-right: 80px;
+justify-content: center;
+}
 footer {
   background-color: #444;
   color: #fff;
@@ -57,4 +62,10 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+.link-active{
+  background-color: aqua;
+  border-radius: 10px;
+width: 100px;
+text-align: center;
 }
