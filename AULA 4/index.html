@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <button class="butao" >clique aqui </button>
+    <button class="butao"> butao 02 </button>
+    <button class="butao"> butao 03 </button>
+    <button class="butao" id="btn4"> mudar Cor Fundo</button>
+    <button class="butao" onclick="clicou()"> butao 4</button>
+
+
+<!-- inicio do codigo -->
+    <script>
+        const btn = document.querySelectorAll('.butao')
+
+        btn[0].addEventListener('click',clicou)
+        btn[1].addEventListener('click',clicou)
+        btn[3].addEventListener('click',mudarCorfundo)
+
+
+    function clicou(){
+        alert("você clicou aqui")
+    }
+
+    function mudarCorfundo(){
+        let color1 = (Math.random(255)*100).toFixed(0);        
+        let color2 = (Math.random(255)*100).toFixed(0);        
+        let color3 = (Math.random(255)*100).toFixed(0);
+        
+        let cor = 'rgb('+color1+','+color2+','+color3+')'
+        document.querySelector('body').style.backgroundColor = cor 
+    }
+        
+    
+
+    </script>
+</body>
+</html>
